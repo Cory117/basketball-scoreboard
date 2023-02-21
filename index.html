@@ -1,0 +1,29 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h2 id="game-title">Basketball Scoreboard</h2>
+        <div class="container">
+            <div class="score-cards">
+                <h3 class="team-title">HOME</h3>
+                <h3 id="homeScore" class="team-score">0</h3>
+                <button id="home-btn-1" class="points-btns" onclick="addOneHomeScore()">+1</button>
+                <button id="home-btn-2" class="points-btns" onclick="addTwoHomeScore()">+2</button>
+                <button id="home-btn-3" class="points-btns" onclick="addThreeHomeScore()">+3</button>
+            </div>
+            <div class="score-cards">
+                <h3 class="team-title">GUEST</h3>
+                <h3 id="guestScore" class="team-score">0</h3>
+                <button id="guest-btn-1" class="points-btns" onclick="addOneGuestScore()">+1</button>
+                <button id="guest-btn-2" class="points-btns" onclick="addTwoGuestScore()">+2</button>
+                <button id="guest-btn-3" class="points-btns" onclick="addThreeGuestScore()">+3</button>
+            </div>
+        </div>
+        <div>
+            <input id="resetBtn" value="Reset Scoreboard" onclick="history.go(0)" type="button">
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
